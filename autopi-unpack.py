@@ -13,3 +13,10 @@ print("image: %s repo: %s" % (image,repository))
 
 if (not os.path.exists(image)):
   sys.exit("%s: Image path %s does not exist." % (sys.argv[0], image))
+
+if (os.listdir(repository)):
+  print ("Directory %s has files inside" % repository)
+else:
+  print ("Directory %s has no files" % repository)
+
+  
